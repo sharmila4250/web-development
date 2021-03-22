@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <style>
+        body{
+            background-color: rgba(88, 248, 213, 0.801);
+        }
+    </style>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required Fields are followed by *</p>
+    <form action="backend.php">
+    <h2>User Details</h2>
+    <div>
+    <label for="username">Name :*</label>
+    <input type="text" name="username" required>
+    </div>
+    <br>
+    <div>
+        Gender :<br><br>Male:<input type="radio" name="usergender" >Female:<input type="radio" name="usergender" >Others:<input type="radio" name="usergender" >
+        </div>
+        <br>
+        <div>
+           Address :<br> <textarea name="Address"  cols="30" rows="10" required></textarea>
+        </div><br>
+        <div>
+          Email : * <input type="email" name="email" required>
+        </div><br>
+        <div>
+            Pincode :*<input type="number" name="pincode" required>
+        </div><br>
+        <h2> Payment Details</h2>
+        <div>
+            Card Type:*
+           <select name="cardtype" >
+               <option value="">--Select a Card Type--</option>
+               <option value="Visa">Visa</option>
+               <option value="Master Card">Master Card</option>
+               <option value="Rupay">Rupay</option>
+           </select>
+        </div><br>
+        <div>
+           Card Number :* <input type="number" name="cardnumber" required>
+        </div><br>
+        <div>
+           Expiration Date :* <input type="date" name="expiration date" required>
+        </div><br>
+        <div>
+           CVV:* <input type="password" name="cvv" required>
+        </div><br>
+        <div>
+            <input type="submit" value="Pay Now">
+            <input type="reset" value="Reset">
+        </div>
+        </form>
+</body>
+</html>
